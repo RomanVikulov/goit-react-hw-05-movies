@@ -4,16 +4,16 @@ import Appbar from './AppBar/AppBar';
 
 
 const HomePage = lazy(() =>
-  import('./HomePage/HomePage')
+  import('../views/HomePage/HomePage')
 );
 const MoviesPage = lazy(() =>
-  import('../views/MoviesPage')
+  import('../views/Movies/MoviesPage')
 );
 const MovieDetailsPage = lazy(() =>
   import(
-    './MovieDetailsPage/MovieDetailsPage')
+    '../views/MovieDetailsPage/MovieDetailsPage')
 );
-const Reviews = lazy(() => import('./Reviews/Reviews'));
+const Reviews = lazy(() => import('../views/Reviews/Reviews'));
 const Cast = lazy(() => import('./Cast/Cast'));
 
 export const App = () => {
